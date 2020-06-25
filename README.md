@@ -4,7 +4,7 @@
 
 ## Intro
 
-  Vous avez déjà été plusieurs sur un meme repository à travailler en même temps sur les mêmes fichiers ? Alors vous avez probablement déjà rencontré les conflits de Git, ces petits incrustes qui viennent te casser les pieds et chier sur ton code lorsque vous modifiez le même fichier et que Git ne sait pas quoi garder. Si t'en as jamais vu, déjà tu devrais jouer au lotto mais ça ressemble à ça  (lignes 8 à 12):
+  Vous avez déjà été plusieurs sur un meme repository à travailler en même temps sur les mêmes fichiers ? Alors vous avez probablement déjà rencontré les conflits de Git, ces petits incrustes qui viennent te casser les pieds et casser ton code lorsque vous modifiez le même fichier et que Git ne sait pas quoi garder. Si t'en as jamais vu, déjà tu devrais jouer au lotto mais ça ressemble à ça  (lignes 8 à 12):
   
    ![Exemple de conflit Git](https://www.grandcircus.co/wp-content/uploads/2016/09/9.png)
   
@@ -21,7 +21,7 @@
     1)Modified : le fichier est détecté comme ayant des modifications par rapport à sa sauvegarde précédente.
     2)Staged : le fichier est “mis à l’index” dans l’aire de “staging” et donc comme faisant partie du prochain commit.
     3)Committed : le fichier modifié est enregistré dans la chaîne de commits.
-   -Il est possible de dire à Git d’ignorer certains fichiers (.gitignore). C’est particulièrement important à propos de certaines    données qui ne    doivent jamais apparaître dans le dépôt, comme les fichiers qui contiennent les mots de passe et les données    environnementales.
+   -Il est possible de dire à Git d’ignorer certains fichiers (.gitignore). C’est particulièrement important à propos de certaines    données qui ne    doivent jamais apparaître dans le dépôt, comme les fichiers qui contiennent les mots de passe et les données environnementales de.
    
 ### Git-Flow
 
