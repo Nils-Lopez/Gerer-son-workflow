@@ -82,8 +82,14 @@ Cette commande copie la branche actuelle, dans une nouvelle branche qui sera "fe
   ![Pull request formulaire](https://sansnom.org/activities/discussions/documentation/free-software/pull-request/pull_request.png)
   
   Tu remarqueras en haut en vert il y a écrit "Able to merge", ça signifie que ta branche n'a aucun conflit avec la branche develop (pas de modifications en commun). Mais il est 
-  probable et fréquent que tu tombes sur des conflits, il y aura alors ça sur la page Github de ta pull request
+  probable et fréquent que tu tombes sur des conflits, il y aura alors ça sur la page Github de ta pull request, tu devras alors cliquer sur resolve conflicts et github te         montrera les conflits, plus qu'à trier ce qu'il faut garder
   
   ![Conflits dans une pull request](https://github.blog/wp-content/uploads/2016/12/fd64b010-c06b-11e6-9dd3-a827e299c5bf.gif?fit=1360%2C426)
   
+  Maintenant qu'il n'y a pas de conflits, invite ton équipe à aller checker ta pull request et à la commenter ou laisser un emoji si ils l'acceptent, une fois que toute l'équipe à checker et validé tu peux merge ta pull request dans l'interface github. 
+  
+## Conclusion 
 
+  Voilà tu as toutes les cartes en main pour avoir un worflow qui déchire !! En respectant ça à la lettre tu ne devrais jamais avoir de problèmes avec Git ou tes collègues. N'hésite pas à revenir ici si tu as des doutes sur une commande, ou quoi que ce soit (moi aussi les premières fois j'allais checker tout à chaque feature car je connaissais pas la procédure). En tout cas enjoy et que je ne t'attrape pas à corriger un bug ou à faire le moindre commit directement sur develop ou pire encore sur master.
+  
+Mission réalisé lors de la session Printemps 2020, par : Antoine Huc et Nils Lopez Martin 
