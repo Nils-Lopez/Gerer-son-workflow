@@ -73,7 +73,17 @@ Cette commande copie la branche actuelle, dans une nouvelle branche qui sera "fe
   1) $ git add --all
   2) $ git commit -m "Nom de ton commit"
   3) $ git push --set-upstream origin feature/NOM_DE_TA_FEATURE
-  4) Rends toi sur la plateforme Github.com, vas sur le repo en question, si tu as bien suivi les étapes précédentes tu devrais voir ça sur la page d'accueil du repo
+  4) Rends toi sur la plateforme Github.com, vas sur le repo en question, si tu as bien suivi les étapes précédentes tu devrais voir ça sur la page d'accueil du repo :
+  
   ![Pull request](https://i.ytimg.com/vi/rgbCcBNZcdQ/maxresdefault.jpg)
  
-    
+   Clique sur "Compare & pull request" il va te proposer de mettre un commentaire à ta feature (mets en un pour expliquer les modifs que tu as fait aux membres de ton équipe) et   poste ta pull request, voici à quoi devrait ressembler ta page :
+  
+  ![Pull request formulaire](https://sansnom.org/activities/discussions/documentation/free-software/pull-request/pull_request.png)
+  
+  Tu remarqueras en haut en vert il y a écrit "Able to merge", ça signifie que ta branche n'a aucun conflit avec la branche develop (pas de modifications en commun). Mais il est 
+  probable et fréquent que tu tombes sur des conflits, il y aura alors ça sur la page Github de ta pull request
+  
+  ![Conflits dans une pull request](https://github.blog/wp-content/uploads/2016/12/fd64b010-c06b-11e6-9dd3-a827e299c5bf.gif?fit=1360%2C426)
+  
+
