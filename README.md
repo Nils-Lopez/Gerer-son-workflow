@@ -1,6 +1,6 @@
 ### Vous démarrez un projet en équipe? Vous ne savez pas encore comment faire? Nous allons vous présenter l'outil indispensable pour réussir ce premier projet
 
-# Gerer son workflow
+# Gérer son workflow
 
 ## Intro
 
@@ -14,7 +14,7 @@
 
   Créé par le créateur de Linux en 2005, Git est un outil puissant de versioning opensource qui présente de nombreux avantages, dont celui de conserver l’intégralité des fichiers à chaque version (et pas seulement les modifications, garantissant ainsi l’intégrité des données), et surtout d’être distribué. Ne nécessitant pas obligatoirement de serveur central, il permet ainsi de travailler localement, hors ligne, et des opérations normalement chronophages et complexes, comme faire des branches, deviennent instantanées.
   
-### Quelques fonctionnalités intéressantes
+### Quelques fonctionnalités intéressantes de Git
   
   -Un repo (raccourci de repository) git est toujours cloné entièrement, permettant ainsi un accès à tout l’historique.
   -La sauvegarde se fait en 3 étapes, les fichiers passant par 3 états:
@@ -31,7 +31,6 @@
   -La branche "develop" est la branche principale du développement de votre projet (votre tronc d'arbre pour tout ce qui est dev      de votre app)
   -Les branches de “feature/” permettent de développer les fonctionnalités souhaitées
   -La branche “release” est dédiée aux pré-livraisons et permet de tester si tout est OK
-  -La branche “hotfix” est dédiée aux corrections urgentes
 
 Ici nous vous montrons l'usage du Git-Flow pour un travail d'équipe mais même dans un projet où vous êtes seul, il est vivement conseillé, car il:
 
@@ -43,4 +42,38 @@ Voici un schéma afin de comprendre la notion de feature et le fonctionnement de
   
 ![Schéma Gitflow](https://media.discordapp.net/attachments/705675068096905216/725302729433415761/gitflow.png?width=537&height=712)
   
+## Utilisation
 
+### Prérequis
+
+  Si vous n'avez pas encore Git il faut l'installer sur votre machine (en passant par le terminal bien sûr) :
+    -Pour MacOs : 
+      $ brew install git-flow-avh 
+    -Pour Linux : 
+      $ apt-get install git-flow
+    -Pour windows (avec Cygwin, pas dans cmd) : 
+      $ wget -q -O - --no-check-certificate https://raw.github.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-    installer.sh install stable | bash
+      
+### Initialisation
+
+  Commencez à utiliser git-flow en l'initialisant dans un repo git existant :
+    $ git flow init
+  Vous devrez répondre à une série de questions sur l'appelation des branches. Personellement, je laisse toutes les valeurs par     défaut et c'est ce que nous vous conseillons.
+  
+### Démarrer le projet
+
+  Maintenant que ton outil est initialisé chez tous les membres de l'équipe, il ne reste plus qu'à coder. Mais attention on va coder intelligement pour éviter les pertes de temps et de croiser les méchants conflits tout moches. Pour ça chaque membre de l'équipe devra créer une feature (une nouvelle branche) pour chaque, ABSOLUMENT CHAQUE, modification du code / correction de bug / ou ajout d'une fonctionnalité. 
+  
+Pour créer sa première feature, attention de toujours être sur develop avant de le faire et d'avoir pull la dernière version de develop:
+
+  $ git flow feature start NOM_DE_TA_FEATURE
+  
+Cette commande copie la branche actuelle, dans une nouvelle branche qui sera "feature/NOM_DE_TA_FEATURE". Maintenant tu peux commencer à bosser, essaie de bosser uniquement sur une fonctionnalité par feature, car si tu fais tout sur la même branche ça rendra inutile l'utilisation du Git-Flow. Une fois que ta fonctionnalité est  finie et fonctionnelle voici la marche à suivre:
+
+  1) $ git add --all
+  2) $ git commit -m "Nom de ton commit"
+  3) $ git push --set-upstream origin feature/NOM_DE_TA_FEATURE
+  4) Rends toi sur la plateforme Github.com, vas sur le repo en question, si tu as bien suivi les étapes précédentes tu devrais voir ça sur la page d'accueil du repo
+  ![Pull request](https://i.ytimg.com/vi/rgbCcBNZcdQ/maxresdefault.jpg)
+ 
+    
